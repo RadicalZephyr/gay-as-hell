@@ -1,6 +1,10 @@
 # The URL the site will be built for
 base_url = "https://gayashell.com"
 
+default_language = "en"
+title = "Gay as Hell"
+description = "You look gay as hell! ;)"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
 
@@ -8,6 +12,11 @@ compile_sass = false
 build_search_index = true
 
 theme = "zola.386"
+
+taxonomies = [
+  {name="categories", rss=true},
+  {name="tags", rss=true},
+]
 
 [markdown]
 # Whether to do syntax highlighting
@@ -18,5 +27,25 @@ highlight_code = false
 # Put all your custom variables here
 author = "Zephyr Shannon"
 year = "2021"
+
 keywords = ["queer", "hell", "awesome"]
-theme_color = ""
+theme_color = "#000084"
+
+zola386_menu = [
+  {path="categories", name="Gay"},
+  {path="", name="as"},
+  {path="tags", name="Hell"},
+]
+
+image = "/img/avatar.jpeg"
+github_user = "RadicalZephyr"
+
+label_tags = "Badassery"
+label_tag = "Badass"
+label_categories = "Queerness"
+label_category = "Queer"
+label_author = "Author"
+label_date = "Date"
+label_taxonomy = "Taxonomy"
+label_reading = "Reading time"
+label_read_more = "Read more"
